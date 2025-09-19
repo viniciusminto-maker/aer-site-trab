@@ -1,0 +1,284 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação Empreende Ribeirão</title>
+    <style>
+        :root {
+            --primary: #1f2a33;       /* cinza-azulado escuro (asfalto) */
+            --secondary: #f39c12;     /* amarelo urbano */
+            --accent: #16a085;        /* verde-petróleo moderno */
+            --light: #f4f4f4;
+            --dark: #1c1c1c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #e9e9e9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(31,42,51,0.8), rgba(31,42,51,0.8)), url('aer.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero .logo-hero {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            max-width: 150px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 2.8rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin: 10px 5px;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #138d75;
+        }
+
+        .swot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .swot-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .swot-item h3 {
+            border-bottom: 3px solid;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .strengths h3 { border-color: #27ae60; }
+        .opportunities h3 { border-color: #2980b9; }
+        .weaknesses h3 { border-color: #f39c12; }
+        .threats h3 { border-color: #c0392b; }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .swot-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header com logo principal -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo-aer.png" alt="Logo AER">
+            </div>
+            <div class="tagline">Promovendo inclusão econômica e social</div>
+        </div>
+    </header>
+
+    <!-- Hero com imagem de fundo urbana -->
+    <section class="hero">
+        
+        <div class="container">
+            <h1>Transforme vidas através do empreendedorismo</h1>
+            <p>Junte-se a nós para capacitar pessoas e fortalecer microempreendimentos em Ribeirão Preto</p>
+            <a href="#contact" class="btn">Quero Apoiar</a>
+            <a href="https://wa.me/5516992837385?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Associação%20Empreende%20Ribeirão" class="btn btn-whatsapp">Fale pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Exemplo de conteúdo -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre a Associação</h2>
+            <p>A Associação Empreende Ribeirão (AER) atua para capacitar microempreendedores e promover inclusão econômica e social em Ribeirão Preto e região.</p>
+        </div>
+    </section>
+
+    <section id="swot">
+        <div class="container">
+            <h2>Análise SWOT</h2>
+            <div class="swot-grid">
+                <div class="swot-item strengths">
+                    <h3>Forças</h3>
+                    <p>Equipe experiente e rede de parceiros consolidada.</p>
+                </div>
+                <div class="swot-item weaknesses">
+                    <h3>Fraquezas</h3>
+                    <p>Recursos limitados para expansão rápida.</p>
+                </div>
+                <div class="swot-item opportunities">
+                    <h3>Oportunidades</h3>
+                    <p>Crescimento do mercado de microempreendedores e acesso a novas tecnologias.</p>
+                </div>
+                <div class="swot-item threats">
+                    <h3>Ameaças</h3>
+                    <p>Concorrência de outras ONGs e instabilidades econômicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <div class="card">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" rows="5" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Associação Empreende Ribeirão. Todos os direitos reservados.</p>
+            <p>Fale pelo WhatsApp: <a href="https://wa.me/5516992837385" style="color:#25D366;">(16) 99283-7385</a></p>
+        </div>
+    </footer>
+
+
+</body></html>
